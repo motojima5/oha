@@ -780,4 +780,140 @@ body {
   font-weight: 700;
   letter-spacing: 0.48px;
   margin-top: 10px;
+}
+
+.merit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .merit {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.merit__boxes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .merit__boxes {
+    margin-top: 60px;
+    gap: 40px;
+  }
+}
+
+.merit-box {
+  border-radius: 20px;
+  background: #fff;
+  padding: 10px 20px 24px;
+}
+@media screen and (min-width: 768px) {
+  .merit-box {
+    padding: 20px 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .merit-box.is-reverse {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .merit-box__content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .is-reverse .merit-box__content {
+    flex-direction: row;
+  }
+}
+
+.merit-box__image {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__image {
+    width: 38.0434782609%;
+  }
+}
+.merit-box__image img {
+  width: 200px;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__image img {
+    width: 350px;
+  }
+}
+
+.merit-box__body {
+  margin-top: 18px;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__body {
+    margin-top: 0;
+    width: 56.5217391304%;
+  }
+}
+
+.merit-box__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__head {
+    gap: 28px;
+  }
+}
+
+.merit-box__number {
+  color: #FABE00;
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__number {
+    font-size: 110px;
+  }
+}
+
+.merit-box__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__title {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.merit-box__text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 2;
+}
+@media screen and (min-width: 768px) {
+  .merit-box__text {
+    margin-top: 16px;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -891,3 +891,138 @@ body {
   letter-spacing: 0.48px;
   margin-top: 10px;
 }
+
+.merit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(pc) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.merit__inner {}
+
+.merit__title {}
+
+.merit__boxes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include mq(pc) {
+    margin-top: 60px;
+    gap: 40px;
+  }
+}
+
+.merit__box {}
+
+.merit-box {
+  border-radius: 20px;
+  background: #fff;
+  padding: 10px 20px 24px;
+
+  @include mq(pc) {
+    padding: 20px 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  &.is-reverse {
+    @include mq(pc) {
+      flex-direction: row;
+    }
+  }
+}
+
+.merit-box__content {
+  @include mq(pc) {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .is-reverse & {
+    @include mq(pc) {
+      flex-direction: row;
+    }
+  }
+}
+
+.merit-box__image {
+  text-align: center;
+
+  @include mq(pc) {
+    width: calc(350 / 920 * 100%);
+  }
+
+  img {
+    width: 200px;
+
+    @include mq(pc) {
+      width: 350px;
+    }
+  }
+}
+
+.merit-box__body {
+  margin-top: 18px;
+
+  @include mq(pc) {
+    margin-top: 0;
+    width: calc(520 / 920 * 100%);
+  }
+}
+
+.merit-box__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  @include mq(pc) {
+    gap: 28px;
+  }
+}
+
+.merit-box__number {
+  color: #FABE00;
+  font-family: $font-family-en;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1;
+
+  @include mq(pc) {
+    font-size: 110px;
+  }
+}
+
+.merit-box__title {
+  font-family: $font-family-en;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+
+  @include mq(pc) {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.merit-box__text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 2;
+
+  @include mq(pc) {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+}
