@@ -588,3 +588,66 @@ body {
     line-height: $line-height-base;
   }
 }
+
+.movie {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../img/section-bg.png) repeat top left / 529px auto;
+
+  @include mq(pc) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.movie__inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.movie__title {
+  text-align: center;
+}
+.movie__title-en {
+  font-family: $font-family-en;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 3.8px;
+
+  @include mq(pc) {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+}
+.movie__title-ja {
+  font-family: $font-family-en;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.12px;
+  margin-top: 14px;
+  @include mq(pc) {
+    font-size: 16px;
+    letter-spacing: 1.28px;
+  }
+}
+.movie__iframe {
+  margin-top: 32px;
+  text-align: center;
+
+  @include mq(pc) {
+    margin-top: 56px;
+  }
+
+  iframe {
+    width: 345px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 345 / 194;
+    vertical-align: top;
+
+    @include mq(pc) {
+      width: 640px;
+      aspect-ratio: 640 / 360;
+    }
+  }
+}
