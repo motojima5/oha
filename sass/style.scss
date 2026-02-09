@@ -45,6 +45,70 @@ body {
   }
 }
 
+.inner {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mq(pc) {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: calc($width-inner + 30px * 2);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.heading {
+  font-family: $font-family-en;
+  text-align: center;
+}
+
+.heading__en {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 3.8px;
+
+  @include mq(pc) {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+}
+
+.heading__ja {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 1.12px;
+  margin-top: 14px;
+
+  @include mq(pc) {
+    font-size: 16px;
+    letter-spacing: 1.28px;
+  }
+}
+
+.button {
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  padding: calc(10px - 2px) calc(30px - 2px);
+  display: inline-block;
+  border-radius: 60px;
+  border: 2px solid currentColor;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+  color: $color-base;
+  min-width: 150px;
+  text-align: center;
+
+  &--type2 {
+    background-color: #111;
+    color: #fff;
+  }
+}
+
 .header {}
 
 .header__inner {
@@ -95,13 +159,13 @@ body {
 }
 
 .header__button {
-  font-weight: 700;
-  letter-spacing: 0.48px;
-  padding: calc(10px - 2px) calc(30px - 2px);
-  display: inline-block;
-  border-radius: 60px;
-  border: 2px solid #111;
-  background: #fff;
+  // font-weight: 700;
+  // letter-spacing: 0.48px;
+  // padding: calc(10px - 2px) calc(30px - 2px);
+  // display: inline-block;
+  // border-radius: 60px;
+  // border: 2px solid #111;
+  // background: #fff;
 }
 
 .header__open {
@@ -229,15 +293,15 @@ body {
   }
 
   a {
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.48px;
-    color: #fff;
-    display: inline-block;
-    padding: calc(10px - 2px) calc(30px - 2px);
-    border-radius: 60px;
-    border: 2px solid #fff;
-    background: #111;
+    // text-align: center;
+    // font-weight: 700;
+    // letter-spacing: 0.48px;
+    // color: #fff;
+    // display: inline-block;
+    // padding: calc(10px - 2px) calc(30px - 2px);
+    // border-radius: 60px;
+    // border: 2px solid #fff;
+    // background: #111;
   }
 }
 
@@ -331,16 +395,16 @@ body {
 }
 
 .news__inner {
-  padding-left: 15px;
-  padding-right: 15px;
+  // padding-left: 15px;
+  // padding-right: 15px;
 
-  @include mq(pc) {
-    padding-left: 30px;
-    padding-right: 30px;
-    max-width: calc($width-inner + 30px * 2);
-    margin-left: auto;
-    margin-right: auto;
-  }
+  // @include mq(pc) {
+  //   padding-left: 30px;
+  //   padding-right: 30px;
+  //   max-width: calc($width-inner + 30px * 2);
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
 }
 
 .news__card {
@@ -577,15 +641,15 @@ body {
   }
 
   button {
-    font-weight: 700;
-    letter-spacing: 0.48px;
-    padding: calc(10px - 2px) calc(30px - 2px);
-    display: inline-block;
-    border-radius: 60px;
-    border: 2px solid #111;
-    background: #fff;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
+    // font-weight: 700;
+    // letter-spacing: 0.48px;
+    // padding: calc(10px - 2px) calc(30px - 2px);
+    // display: inline-block;
+    // border-radius: 60px;
+    // border: 2px solid #111;
+    // background: #fff;
+    // font-size: $font-size-base;
+    // line-height: $line-height-base;
   }
 }
 
@@ -599,37 +663,43 @@ body {
     padding-bottom: 100px;
   }
 }
+
 .movie__inner {
   padding-left: 15px;
   padding-right: 15px;
 }
-.movie__title {
-  text-align: center;
-}
-.movie__title-en {
-  font-family: $font-family-en;
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 3.8px;
 
-  @include mq(pc) {
-    font-size: 50px;
-    letter-spacing: 5px;
-  }
+.movie__title {
+  // text-align: center;
 }
+
+.movie__title-en {
+  // font-family: $font-family-en;
+  // font-size: 38px;
+  // font-weight: 700;
+  // line-height: 1;
+  // letter-spacing: 3.8px;
+
+  // @include mq(pc) {
+  //   font-size: 50px;
+  //   letter-spacing: 5px;
+  // }
+}
+
 .movie__title-ja {
-  font-family: $font-family-en;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  letter-spacing: 1.12px;
-  margin-top: 14px;
-  @include mq(pc) {
-    font-size: 16px;
-    letter-spacing: 1.28px;
-  }
+  // font-family: $font-family-en;
+  // font-size: 14px;
+  // font-weight: 400;
+  // line-height: 1;
+  // letter-spacing: 1.12px;
+  // margin-top: 14px;
+
+  // @include mq(pc) {
+  //   font-size: 16px;
+  //   letter-spacing: 1.28px;
+  // }
 }
+
 .movie__iframe {
   margin-top: 32px;
   text-align: center;
