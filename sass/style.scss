@@ -107,10 +107,20 @@ body {
   color: $color-base;
   min-width: 150px;
   text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #FABE00;
+  }
 
   &--type2 {
     background-color: #111;
     color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #111;
+    }
   }
 }
 
@@ -161,6 +171,11 @@ body {
 .header__link {
   font-weight: 700;
   letter-spacing: 0.48px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #F5810E;
+  }
 }
 
 .header__button {
@@ -478,9 +493,14 @@ body {
     font-weight: 700;
     line-height: 1;
     display: inline-block;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid currentColor;
     padding-bottom: calc(10px - 2px);
     vertical-align: top;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #FABE00;
+    }
   }
 }
 
@@ -490,12 +510,17 @@ body {
   gap: 7px;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: background-color 0.3s;
 
   @include mq(pc) {
     flex-direction: row;
     padding-top: 12px;
     padding-bottom: 12px;
     gap: 0;
+  }
+
+  &:hover {
+    background-color: #FFF9E5;
   }
 }
 
@@ -1341,10 +1366,25 @@ body {
   border: 3px solid #111;
   background: #fff;
   padding: calc(15px - 3px) calc(16px - 3px) calc(14px - 3px);
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: #fabe00;
+    outline: none;
+  }
 }
 
 .form-radio {
   line-height: calc(23 / 16);
+
+  &:hover {
+    .form-radio__text {
+      &::before {
+        border-color: #fabe00;
+      }
+    }
+  }
 }
 
 .form-radio__input {
@@ -1359,6 +1399,14 @@ body {
     +.form-radio__text {
       &::after {
         opacity: 1;
+      }
+    }
+  }
+
+  &:focus {
+    +.form-radio__text {
+      &::before {
+        border-color: #fabe00;
       }
     }
   }
@@ -1383,6 +1431,7 @@ body {
     height: 24px;
     border: 3px solid #111;
     left: 0;
+    transition: border-color 0.3s;
   }
 
   &::after {
@@ -1403,6 +1452,13 @@ body {
   font-weight: 700;
   padding: calc(15px - 3px) calc(46px - 3px) calc(14px - 3px) calc(16px - 3px);
   background: url(../img/select-arrow.png) no-repeat center right 14px / 9.451px 6.969px;
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: #fabe00;
+    outline: none;
+  }
 }
 
 .form-textarea {
@@ -1412,6 +1468,13 @@ body {
   width: 100%;
   height: 180px;
   padding: calc(16px - 3px);
+  transition: border-color 0.3s;
+
+  &:hover,
+  &:focus {
+    border-color: #fabe00;
+    outline: none;
+  }
 }
 
 .form-field__radios {
@@ -1457,7 +1520,15 @@ body {
 //   }
 // }
 
-.form-checkbox {}
+.form-checkbox {
+  &:hover {
+    .form-checkbox__text {
+      &::before {
+        border-color: #fabe00;
+      }
+    }
+  }
+}
 
 .form-checkbox__input {
   width: 1px;
@@ -1471,6 +1542,14 @@ body {
     +.form-checkbox__text {
       &::after {
         opacity: 1;
+      }
+    }
+  }
+
+  &:focus {
+    +.form-checkbox__text {
+      &::before {
+        border-color: #fabe00;
       }
     }
   }
@@ -1496,6 +1575,7 @@ body {
     height: 20px;
     border-radius: 1px;
     border: 1px solid #111;
+    transition: border-color 0.3s;
 
     @include mq(pc) {
       margin-top: 2px;
@@ -1518,6 +1598,11 @@ body {
   a {
     text-decoration: underline;
     font-weight: inherit;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #F5810E;
+    }
   }
 }
 
