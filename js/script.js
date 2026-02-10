@@ -62,3 +62,11 @@ jQuery('a[href^="#"]').on("click", function (e) {
     "swing", // swing or linear
   );
 });
+
+jQuery(window).on("scroll", function(){
+  if (100 < jQuery(window).scrollTop()) {
+    jQuery("#js-pagetop").addClass("is-show")
+  } else {
+    jQuery("#js-pagetop").removeClass("is-show")
+  }
+})

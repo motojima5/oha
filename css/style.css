@@ -1766,6 +1766,9 @@ body {
   right: 10px;
   bottom: 10px;
   width: min(13.3333333333%, 50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 @media screen and (min-width: 768px) {
   .pagetop {
@@ -1773,6 +1776,10 @@ body {
     bottom: 30px;
     width: 76px;
   }
+}
+.pagetop.is-show {
+  opacity: 1;
+  visibility: visible;
 }
 .about-modal {
   position: fixed;

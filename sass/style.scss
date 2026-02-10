@@ -2017,11 +2017,19 @@ body {
   right: 10px;
   bottom: 10px;
   width: min(calc(50 / 375 * 100%), 50px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
 
   @include mq(pc) {
     right: 16px;
     bottom: 30px;
     width: 76px;
+  }
+
+  &.is-show {
+    opacity: 1;
+    visibility: visible;
   }
 
   img {
