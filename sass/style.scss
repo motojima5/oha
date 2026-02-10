@@ -2027,3 +2027,67 @@ body {
     // }
   }
 }
+
+.about-modal {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  max-width: calc(100% - 15px * 2);
+  max-height: calc(100% - 20px * 2);
+  overflow: auto;
+  padding: 16px 15px 64px;
+  border-radius: 20px;
+  background: #fff;
+  border: none;
+  z-index: 60;
+  overscroll-behavior-y: none;
+
+  @include mq(pc) {
+    width: 1140px;
+    padding: 49px 70px 75px;
+  }
+
+  // JSでshowModalを使うと使える疑似要素
+  &::backdrop {
+    opacity: 0.2;
+    background: #000;
+  }
+}
+
+.about-modal__head {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}
+
+.about-modal__close-icon {
+  img {
+    width: 37px;
+  }
+}
+
+.about-modal__body {
+  margin-top: 12px;
+
+  @include mq(pc) {
+    margin-top: 43px;
+  }
+
+  p {
+    font-size: 14px;
+
+    @include mq(pc) {
+      font-size: 16px;
+    }
+
+    &:nth-child(n + 2) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.about-modal__close-button {
+  margin-top: 30px;
+  text-align: center;
+}
