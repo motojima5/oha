@@ -43,3 +43,22 @@ jQuery(".js-modal-close").on("click", function (e) {
 
   jQuery("#js-about-modal")[0].close();
 });
+
+jQuery('#js-drawer-content a[href^="#"]').on("click", function (e) {
+  jQuery("#js-drawer-icon").removeClass("is-checked");
+  jQuery("#js-drawer-content").removeClass("is-checked");
+});
+
+jQuery('a[href^="#"]').on("click", function (e) {
+  const speed = 1000;
+  const id = jQuery(this).attr("href");
+  const target = jQuery("#" == id ? "html" : id);
+  const position = jQuery(target).offset().top;
+  jQuery("html, body").animate(
+    {
+      scrollTop: position,
+    },
+    speed,
+    "swing", // swing or linear
+  );
+});
