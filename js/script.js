@@ -63,10 +63,25 @@ jQuery('a[href^="#"]').on("click", function (e) {
   );
 });
 
-jQuery(window).on("scroll", function(){
+jQuery(window).on("scroll", function () {
   if (100 < jQuery(window).scrollTop()) {
-    jQuery("#js-pagetop").addClass("is-show")
+    jQuery("#js-pagetop").addClass("is-show");
   } else {
-    jQuery("#js-pagetop").removeClass("is-show")
+    jQuery("#js-pagetop").removeClass("is-show");
   }
-})
+});
+
+const intersectionObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-in-view");
+    } else {
+      // entry.target.classList.remove("is-in-view");
+    }
+  });
+});
+
+const inViewItems = document.querySelectorAll(".js-in-view");
+inViewItems.forEach(function (inViewItem) {
+  intersectionObserver.observe(inViewItem);
+});

@@ -17,3 +17,4 @@
 - モーダル
 - スムーススクロール（CSS/jQuery）
 - フローティングアイテム
+- ふわっと表示（IntersectionObserver）
