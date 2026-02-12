@@ -91,21 +91,21 @@
         <div class="news__lists">
           <a href="" class="news__list news-link">
             <div class="news-link__meta">
-              <time datetime="" class="news-link__date">2022年12月15日</time>
+              <time datetime="2022-12-15" class="news-link__date">2022年12月15日</time>
               <div class="news-link__label is-news">お知らせ</div>
             </div>
             <h3 class="news-link__title">年末年始について</h3>
           </a>
           <a href="" class="news__list news-link">
             <div class="news-link__meta">
-              <time datetime="" class="news-link__date">2022年12月10日</time>
+              <time datetime="2022-12-10" class="news-link__date">2022年12月10日</time>
               <div class="news-link__label is-column">コラム</div>
             </div>
             <h3 class="news-link__title">あの芸能人にも使っていただいていることが判明しました！もう嬉しすぎて頭が真っ白になってしまいましたが、続きは本文にて！</h3>
           </a>
           <a href="" class="news__list news-link">
             <div class="news-link__meta">
-              <time datetime="" class="news-link__date">2022年9月1日</time>
+              <time datetime="2022-09-01" class="news-link__date">2022年9月1日</time>
               <div class="news-link__label is-event">イベント情報</div>
             </div>
             <h3 class="news-link__title">幕張メッセにて体験会を実施します！</h3>
@@ -116,7 +116,7 @@
     </div>
   </section>
 
-  <section id="about" class="about">
+  <div id="about" class="about">
     <div class="about__inner">
       <div class="about__title js-in-view fade-in-up"><img src="./img/about-logo.png" alt="OHA!"></div>
       <div class="about__content">
@@ -135,7 +135,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
   <dialog id="js-about-modal" class="about-modal">
     <div class="about-modal__head">
@@ -499,7 +499,7 @@
             <div class="heading__ja">お問い合わせ</div>
           </div>
         </div>
-        <form action="" class="contact__form">
+        <form class="contact__form">
           <div class="contact__fields">
             <div class="contact__field">
               <div class="form-field">
@@ -508,7 +508,7 @@
                   <span class="form-field__tag">必須</span>
                 </div>
                 <div class="form-field__item">
-                  <input type="text" name="" id="your-name" placeholder="田中 おは次郎" class="form-text">
+                  <input type="text" id="your-name" placeholder="田中 おは次郎" class="form-text">
                 </div>
               </div>
             </div>
@@ -519,7 +519,7 @@
                   <span class="form-field__tag">必須</span>
                 </div>
                 <div class="form-field__item">
-                  <input type="email" name="" id="your-email" placeholder="info@oha.com" class="form-text">
+                  <input type="email" id="your-email" placeholder="info@oha.com" class="form-text">
                 </div>
               </div>
             </div>
@@ -530,17 +530,17 @@
                   <span class="form-field__tag">必須</span>
                 </div>
                 <div class="form-field__item">
-                  <div for="" class="form-field__radios">
+                  <div class="form-field__radios">
                     <label class="form-field__radio form-radio">
-                      <input type="radio" name="your-name" id="" class="form-radio__input">
+                      <input type="radio" name="your-name" class="form-radio__input">
                       <span class="form-radio__text">アプリの質問</span>
                     </label>
                     <label class="form-field__radio form-radio">
-                      <input type="radio" name="your-name" id="" class="form-radio__input">
+                      <input type="radio" name="your-name" class="form-radio__input">
                       <span class="form-radio__text">取材の依頼</span>
                     </label>
                     <label class="form-field__radio form-radio">
-                      <input type="radio" name="your-name" id="" class="form-radio__input">
+                      <input type="radio" name="your-name" class="form-radio__input">
                       <span class="form-radio__text">その他</span>
                     </label>
                   </div>
@@ -554,7 +554,7 @@
                   <span class="form-field__tag is-option">任意</span>
                 </div>
                 <div class="form-field__item">
-                  <select name="" id="your-age" class="form-select">
+                  <select id="your-age" class="form-select">
                     <option value="">選択してください</option>
                     <option value="">10代</option>
                     <option value="">20代</option>
@@ -575,7 +575,7 @@
                   <span class="form-field__tag">必須</span>
                 </div>
                 <div class="form-field__item">
-                  <textarea name="" id="your-message" placeholder="ここに文章を入力してくださいここに文章を入力してください"
+                  <textarea id="your-message" placeholder="ここに文章を入力してくださいここに文章を入力してください"
                     class="form-textarea"></textarea>
                 </div>
               </div>
@@ -583,7 +583,7 @@
           </div>
           <div class="contact__privacy">
             <label class="form-checkbox">
-              <input type="checkbox" name="" id="" class="form-checkbox__input">
+              <input type="checkbox" class="form-checkbox__input">
               <span class="form-checkbox__text"><a href="" target="_blank">プライバシーポリシー</a>に同意する</span>
             </label>
           </div>
